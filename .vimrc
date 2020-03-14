@@ -9,7 +9,8 @@ let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
-let g:airline_theme='angr'
+let g:airline_theme='gruvbox'
+"let g:airline_theme='angr'
 set nocompatible              " be iMproved, required
 filetype off                  " required
 let g:airline_powerline_fonts = 1
@@ -31,6 +32,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " let Vundle manage Vundle, required
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'morhetz/gruvbox'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'joshdick/onedark.vim'
@@ -66,7 +68,9 @@ filetype plugin indent on    " required
 map <C-t> :NERDTreeToggle<CR>
 syntax on
 autocmd vimenter * NERDTree
+"let g:gruvbox_contrast_dark = 'medium'
 colorscheme onedark
+"set background=dark
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
